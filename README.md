@@ -1,5 +1,5 @@
 # Turbo: Opportunistic Enhancement for Edge Video Analytics
-### [Project Page](https://sites.google.com/view/turbo-video/home) | [Paper](https://sensys.acm.org/2022/program/)
+### [Project Page](https://sites.google.com/view/turbo-video/home) | [Paper](https://sensys.acm.org/2022/program/) | [Slides](https://docs.google.com/presentation/d/1YC4AroTsKANywqEJ4b6J2sVE56SQnSAZ/edit?usp=sharing&ouid=116661842111065626963&rtpof=true&sd=true)
 ![overview](./media/overview.png)
 
 This repository contains the official implementation of the SenSys'22 paper:  
