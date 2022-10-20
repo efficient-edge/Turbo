@@ -7,16 +7,24 @@ This repository contains the official implementation of the SenSys'22 paper:
 [Yan Lu](https://jason-cs18.github.io/), [Shiqi Jiang](https://www.microsoft.com/en-us/research/people/shijiang/), [Ting Cao](https://www.microsoft.com/en-us/research/people/ticao/), [Yuanchao Shu](https://www.microsoft.com/en-us/research/people/yushu/publications/).  
 The paper introduces **Turbo** which selectively enhances incoming frames based GPU resource availability via a detector-specific GAN and a resource-aware scheduling algorithm.
 
-Source code and demo for Turbo
+Source code and docs for Turbo
+
+## Installation
+
+## Source code
+
+## Documentations
+
+## Demo
 
 ## Citing Turbo
-    @inproceedings{xxx,
+    @inproceedings{yan2022turbo,
         author={Yan Lu, Shiqi Jiang, Ting Cao, Yuanchao Shu}
         title={{Turbo: Opportunistic Enhancement for Edge Video Analytics}},
         booktitle={Proceedings of the 19th ACM Conference on Embedded Networked Sensor Systems (SenSys 22)},
         year={2022},
         address={Boston, MA},
-        url={xxx},
+        url={https://sensys.acm.org/2022/program/},
         publisher={Association for Computing Machinery},
         month=nov,
     }
