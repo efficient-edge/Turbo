@@ -8,3 +8,15 @@ This repository contains the official implementation of the SenSys'22 paper:
 The paper introduces **Turbo** which selectively enhances incoming frames based GPU resource availability via a detector-specific GAN and a resource-aware scheduling algorithm.
 
 Source code and demo for Turbo
+
+## Citing Turbo
+    @inproceedings{xxx,
+        author={Yan Lu, Shiqi Jiang, Ting Cao, Yuanchao Shu}
+        title={{Turbo: Opportunistic Enhancement for Edge Video Analytics}},
+        booktitle={Proceedings of the 19th ACM Conference on Embedded Networked Sensor Systems (SenSys 22)},
+        year={2022},
+        address={Boston, MA},
+        url={xxx},
+        publisher={Association for Computing Machinery},
+        month=nov,
+    }
