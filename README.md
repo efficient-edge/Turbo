@@ -17,6 +17,8 @@ Source code and docs for Turbo
 
 ## Demo
 
+## Reference
+1. [e2e-detection](https://github.com/efficient-edge/e2e-detection): a toolkit to benchmark/deploy Pytorch/TensorFlow models on CPU/GPU with Nvidia Triton in a fewer lines of code.
 ## Citing Turbo
 If you find this project is useful to your research, please consider cite it.
 ```
