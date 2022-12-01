@@ -18,11 +18,11 @@ We provide some dockerfiles for NVIDIA GPU users to complete different tasks (tr
 - [ ] GAN: train and evaluate the enhancer on pre-trained data
 - [ ] E2E: run enhancers with a specific video analytics pipeline and elastic scheduling algorithm on Triton
 ## Documentations
-1. Test your models (yolov3, faster-rcnn, efficientdet-dx) on Triton
-2. Integrate with video analytics pipelines
-3. Enable resource-aware scheduling
-4. GAN (enhancer) pre-training
-5. End2end experiments
+1. Test Detectors (yolov3, faster-rcnn, efficientdet-dx) on Triton
+2. Integrate with Video Analytics Pipelines
+3. Enable Resource-Aware Scheduling
+4. GAN (enhancer) Pre-Training
+5. End2end Experiments
 ## Demo
 
 ## Reference
