@@ -18,15 +18,17 @@ We provide some dockerfiles for NVIDIA GPU users to complete different tasks (tr
 - [ ] GAN: train and evaluate the enhancer on pre-trained data
 - [ ] E2E: run enhancers with a specific video analytics pipeline and elastic scheduling algorithm on Triton
 ## Documentations
-1. Test Detectors (yolov3, faster-rcnn, efficientdet-dx) on Triton
-2. Integrate with Video Analytics Pipelines
-3. Enable Resource-Aware Scheduling
-4. GAN (enhancer) Pre-Training
-5. End2end Experiments
+1. [Test Detectors (yolov3, faster-rcnn, efficientdet-dx) on Triton](https://github.com/efficient-edge/Turbo/tree/main/Triton)
+2. [Integrate with Video Analytics Pipelines](https://github.com/efficient-edge/Turbo/tree/main/VAP)
+3. [Enable Resource-Aware Scheduling](https://github.com/efficient-edge/Turbo/tree/main/Scheduling)
+4. [GAN (enhancer) Pre-Training](https://github.com/efficient-edge/Turbo/tree/main/GAN)
+5. [End2end Experiments](https://github.com/efficient-edge/Turbo/tree/main/E2E)
 ## Demo
 
 ## Reference
-1. [e2e-detection](https://github.com/efficient-edge/e2e-detection): a toolkit to benchmark/deploy Pytorch/TensorFlow models on CPU/GPU with Nvidia Triton in a fewer lines of code.
+1. [Open-MMLab mmdeploy](https://github.com/open-mmlab/mmdeploy): convert detectors (yolov3 and fasterrcnn) to TensorRT models.
+2. [TensorRT Efficient-TensorRT8](https://github.com/NVIDIA/TensorRT/blob/96e23978cd6e4a8fe869696d3d8ec2b47120629b/demo/EfficientDet/notebooks/EfficientDet-TensorRT8.ipynb): convert detectors (efficientdet-dx) to TensorRT models.
+3. [Nvidia Triton](https://github.com/triton-inference-server/server): build and deploy detectors on Triton server. 
 ## Citing Turbo
 If you find this project is useful to your research, please consider cite it.
 ```
