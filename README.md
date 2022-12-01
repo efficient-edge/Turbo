@@ -16,7 +16,7 @@ We provide some dockerfiles for NVIDIA GPU users to complete different tasks (tr
 - [ ] VAP: use advanced video analytics pipelines as data preprocessing techniques
 - [ ] Scheduling: enable resource-aware scheduling algorithms on Triton with a specific video analytics pipeline
 - [ ] GAN: train and evaluate the enhancer on pre-trained data
-- [ ] E2E: run enhancers with a specific video analytics pipeline and elastic scheduling algorithm on Triton
+- [ ] E2E: run enhancers with a specific video analytics pipeline and a elastic scheduling algorithm on Triton
 ## Documentations
 1. [Test Detectors (yolov3, faster-rcnn, efficientdet-dx) on Triton](https://github.com/efficient-edge/Turbo/tree/main/Triton)
 2. [Integrate with Video Analytics Pipelines](https://github.com/efficient-edge/Turbo/tree/main/VAP)
