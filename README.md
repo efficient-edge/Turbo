@@ -14,6 +14,11 @@ Source code and docs for Turbo
 ## Source code
 
 ## Documentations
+1. Test your models (yolov3, faster-rcnn, efficientdet-dx) on Triton
+2. Integrate it with video analytics pipeline
+3. Enable resource-aware scheduling
+4. GAN (enhancer) pre-training
+5. End2end experiments
 
 ## Demo
 
