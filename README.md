@@ -10,16 +10,19 @@ The paper introduces **Turbo** which selectively enhances incoming frames based 
 Source code and docs for Turbo
 
 ## Installation
-
+We provide some dockerfiles for NVIDIA GPU users to complete different tasks (training, testing, deployment and visualization). Thus, users do not need to install any libraries and only build the specific docker image for a component.
 ## Source code
-
+- [ ] Trion: convert detectors to TensorRT models and deploy them on Triton
+- [ ] VAP: use advanced video analytics pipelines as data preprocessing techniques
+- [ ] Scheduling: enable resource-aware scheduling algorithms on Triton with a specific video analytics pipeline
+- [ ] GAN: train and evaluate the enhancer on pre-trained data
+- [ ] E2E: run enhancers with a specific video analytics pipeline and elastic scheduling algorithm on Triton
 ## Documentations
 1. Test your models (yolov3, faster-rcnn, efficientdet-dx) on Triton
-2. Integrate it with video analytics pipeline
+2. Integrate with video analytics pipelines
 3. Enable resource-aware scheduling
 4. GAN (enhancer) pre-training
 5. End2end experiments
-
 ## Demo
 
 ## Reference

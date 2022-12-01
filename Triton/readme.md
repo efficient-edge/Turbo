@@ -1,0 +1,1 @@
+# Test Detectors (yolov3, faster-rcnn, efficientdet-dx) on Triton
