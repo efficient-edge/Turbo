@@ -18,8 +18,13 @@ In Turbo, we use Pytorch pre-trained models for YOLOv3 and Faster RCNN. For Effi
 1. Convert a TensorFlow model to TensorRT format
    ```
    # Run the docker container in a interactive mode
-   1. docker run -it --rm --net host -
-   ``` 
+   1. docker run -it --rm --net host -v $Turbo/Models/:/checkpoints efficientdet
+   # In the container
+   2. pip uninstall pycuda
+   3. pip install pycuda
+   4. python3 ./tensorrt/samples/python/efficientdet/build_engine.py --onnx ./onnx_model/model.onnx --engine /checkpoints/engine.trt --precision fp32
+   ```
+2. XXX
    
 <em>Note: Because we have downloaded a checkpoint of efficientdet-dx in the docker image, you do not need to download again. In this example, we download efficient-d0. If you want to download other variants, you need to modify lines 36--38 of $Turbo/Docker/tensorflow_tensorrt/Dockerfile.</em> 
 ## model configuration
