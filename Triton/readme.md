@@ -37,6 +37,17 @@ In Turbo, we use Pytorch pre-trained models for YOLOv3 and Faster RCNN. For Effi
 <em>Note#2:</em> Details (input size) of efficient-dx can be found in [EfficientDet-TensorRT8.ipynb](https://github.com/NVIDIA/TensorRT/blob/96e23978cd6e4a8fe869696d3d8ec2b47120629b/demo/EfficientDet/notebooks/EfficientDet-TensorRT8.ipynb).
 
 ## model configuration
+1. Check TensorRT models and modify the config.pbtxt
+   ```
+   1. docker run -it --rm -v $Turbo/Models/:/checkpoints efficientdet
+   2. polygraphy inspect model /checkpoints/engine.trt --model-type engine
+   ```
+2. (Optional) Download model_repository.tar.gz (~487MB) and decompress them in <em>>$Turbo/Models</em>
+   ```
+   1. cd $Turbo/Models
+   2. download https://drive.google.com/file/d/1o3V_QcShEwEVMlwWmw5qTVUpa3dDatEk/view?usp=sharing
+   3. tar -xf model_repository.tar.gz
+   ```
 ## triton server deployment
 ## triton client applications
 ## visualization
