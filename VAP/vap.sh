@@ -1,0 +1,1 @@
+# leverage different video analytics pipelines (Glimpse, Vigil, NoScope) to preprocess an given video.

@@ -1,0 +1,1 @@
+# compute the idle resources and assign the specific detector to a frame

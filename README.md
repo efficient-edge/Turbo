@@ -19,7 +19,7 @@ We provide some dockerfiles for NVIDIA GPU users to complete different tasks (tr
   - [ ] triton_client.sh: start a triton client application to send/receive a video.
   - [ ] visualization.ipynb: analysis and visualize results (bboxes, mAP and resource usage). 
 - [ ] VAP: use advanced video analytics pipelines as data preprocessing techniques.
-  - [ ] vap.sh: leverage different video analytics pipelines () to preprocess an given video.
+  - [ ] vap.sh: leverage different video analytics pipelines (Glimpse, Vigil, NoScope) to preprocess an given video.
 - [ ] Scheduling: enable resource-aware scheduling algorithms on Triton with a specific video analytics pipeline.
   - [ ] profiler.sh: profile detectors on pre-trained or customized data
   - [ ] scheduler.sh: compute the idle resources and assign the specific detector to a frame.
