@@ -1,0 +1,1 @@
+# compute the idle resources for an given video, detector and a specific video analytics pipeline

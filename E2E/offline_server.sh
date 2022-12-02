@@ -1,0 +1,1 @@
+# run a triton server with all deployed enhancers and detectors

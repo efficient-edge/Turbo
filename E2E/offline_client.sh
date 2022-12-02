@@ -1,0 +1,1 @@
+# run a triton client application to send/receive videos/results

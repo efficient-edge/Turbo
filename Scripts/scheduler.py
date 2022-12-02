@@ -1,0 +1,1 @@
+# assign the suitable detector to each frame based on an given idle resource and profiling results

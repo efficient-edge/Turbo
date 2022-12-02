@@ -25,6 +25,7 @@ We provide some dockerfiles for NVIDIA GPU users to complete different tasks (tr
   - [ ] scheduler.sh: compute the idle resources and assign the specific detector to a frame.
 - [ ] GAN: train and evaluate the enhancer on pre-train data.
   - [ ] gan_train.sh: preprocessing pre-train data and training an enhancer on it.
+  - [ ] gan_evaluate.ipynb: visualize and analysis training/testing logs.
 - [ ] E2E: run enhancers with a specific video analytics pipeline and a elastic scheduling algorithm on Triton.
   - [ ] offline.sh: profile accuracy and latency for all enhancer models.
   - [ ] online_server.sh: run a triton server with all deployed enhancers and detectors.
@@ -39,9 +40,9 @@ We provide some dockerfiles for NVIDIA GPU users to complete different tasks (tr
   - [ ] idle_resource.py: compute the idle resources for an given video, detector and a specific video analytics pipeline.
   - [ ] scheduler.py: assign the suitable detector to each frame based on an given idle resource and profiling results.
   - [ ] profiler.py: profile accuracy and latency of detectors. 
-  - [ ] model_convert_torch.py: convert yolov3 and fasterrcnn to tensorrt formats.
-  - [ ] model_convert_tf.py: convert efficientdet-dx to tensorrt formats.
-  - [ ] model_configure.py: generate configure files for any tensorrt models.
+  - [x] model_convert_torch.py: convert yolov3 and fasterrcnn to tensorrt formats.
+  - [x] model_convert_tf.py: convert efficientdet-dx to tensorrt formats.
+  - [x] model_configure.py: generate configure files for any tensorrt models.
   - [ ] parse_result.py: xxx
 ## Documentations
 1. [Test Detectors (yolov3, faster-rcnn, efficientdet-dx) on Triton](https://github.com/efficient-edge/Turbo/tree/main/Triton)
