@@ -10,7 +10,7 @@ The paper introduces **Turbo** which selectively enhances incoming frames based 
 Source code and docs for Turbo
 
 ## Installation
-We provide all [dockerfiles]() for NVIDIA GPU users to complete different tasks (training, testing, deployment and visualization). Thus, users only need to build the specific docker image for a component and then conduct all experiments in the docker container.
+We provide all [dockerfiles](https://github.com/efficient-edge/Turbo/blob/main/Docker/readme.md) for NVIDIA GPU users to complete different tasks (training, testing, deployment and visualization). Thus, users only need to build the specific docker image for a component and then conduct all experiments in the docker container.
 ## Source code (file structure and TODO)
 - [ ] Trion: convert detectors to TensorRT models and deploy them on Triton.
   - [ ] model_convert.sh: convert pytorch/tensorflow detectors to tensorrt detectors.
@@ -51,7 +51,7 @@ We provide all [dockerfiles]() for NVIDIA GPU users to complete different tasks 
 4. [GAN (enhancer) Pre-Training](https://github.com/efficient-edge/Turbo/tree/main/GAN)
 5. [End2end Experiments](https://github.com/efficient-edge/Turbo/tree/main/E2E)
 ## Demo
-TBD
+[Demo for Turbo](https://github.com/efficient-edge/Turbo/blob/main/Demo/readme.md)
 ## Reference
 1. [Open-MMLab mmdeploy](https://github.com/open-mmlab/mmdeploy): convert detectors (yolov3 and fasterrcnn) to TensorRT models.
 2. [TensorRT Efficient-TensorRT8](https://github.com/NVIDIA/TensorRT/blob/96e23978cd6e4a8fe869696d3d8ec2b47120629b/demo/EfficientDet/notebooks/EfficientDet-TensorRT8.ipynb): convert detectors (efficientdet-dx) to TensorRT models.
