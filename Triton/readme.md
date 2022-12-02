@@ -42,7 +42,6 @@ In Turbo, we use Pytorch pre-trained models for YOLOv3 and Faster RCNN. For Effi
    1. docker run -it --rm -v $Turbo/Models/:/checkpoints efficientdet
    2. polygraphy inspect model /checkpoints/engine.trt --model-type engine
    ```
-
 ![](https://github.com/efficient-edge/Turbo/blob/main/media/model_config1.png)
 
 2. (Optional) Download model_repository.tar.gz (~487MB) and decompress them in <em>>$Turbo/Models</em>
