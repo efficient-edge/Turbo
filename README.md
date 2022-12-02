@@ -11,12 +11,38 @@ Source code and docs for Turbo
 
 ## Installation
 We provide some dockerfiles for NVIDIA GPU users to complete different tasks (training, testing, deployment and visualization). Thus, users do not need to install any libraries and only build the specific docker image for a component.
-## Source code
-- [ ] Trion: convert detectors to TensorRT models and deploy them on Triton
-- [ ] VAP: use advanced video analytics pipelines as data preprocessing techniques
-- [ ] Scheduling: enable resource-aware scheduling algorithms on Triton with a specific video analytics pipeline
-- [ ] GAN: train and evaluate the enhancer on pre-trained data
-- [ ] E2E: run enhancers with a specific video analytics pipeline and a elastic scheduling algorithm on Triton
+## Source code (file structure and TODO)
+- [ ] Trion: convert detectors to TensorRT models and deploy them on Triton.
+  - [ ] model_convert.sh: convert pytorch/tensorflow detectors to tensorrt detectors.
+  - [ ] model_configure.sh: generate the model configs of tensorrt detectors for triton.
+  - [ ] triton_server.sh: start a triton server in docker mode with all deployed tensorrt detectors
+  - [ ] triton_client.sh: start a triton client application to send/receive a video.
+  - [ ] visualization.ipynb: analysis and visualize results (bboxes, mAP and resource usage). 
+- [ ] VAP: use advanced video analytics pipelines as data preprocessing techniques.
+  - [ ] vap.sh: leverage different video analytics pipelines () to preprocess an given video.
+- [ ] Scheduling: enable resource-aware scheduling algorithms on Triton with a specific video analytics pipeline.
+  - [ ] profiler.sh: profile detectors on pre-trained or customized data
+  - [ ] scheduler.sh: compute the idle resources and assign the specific detector to a frame.
+- [ ] GAN: train and evaluate the enhancer on pre-train data.
+  - [ ] gan_train.sh: preprocessing pre-train data and training an enhancer on it.
+- [ ] E2E: run enhancers with a specific video analytics pipeline and a elastic scheduling algorithm on Triton.
+  - [ ] offline.sh: profile accuracy and latency for all enhancer models.
+  - [ ] online_server.sh: run a triton server with all deployed enhancers and detectors.
+  - [ ] online_client.sh: run a triton client application to send/receive videos/results.
+  - [ ] visualization.ipynb: parse and visualize results (accuracy, latency and resource usage).  
+- [ ] Scripts: all scripts for Turbo.
+  - [ ] preprocess.py: preprocessing code for AICity and UADetrac.
+  - [ ] trainer.py: training code for GAN.
+  - [ ] evaluate.py: evaluation code on outputs and ground-truth.
+  - [ ] vap.py: preprocessing code for an given video based on different video analytics pipelines.
+  - [ ] resource_consume.py: parse resource usage (log) and save them as human-readable format.
+  - [ ] idle_resource.py: compute the idle resources for an given video, detector and a specific video analytics pipeline.
+  - [ ] scheduler.py: assign the suitable detector to each frame based on an given idle resource and profiling results.
+  - [ ] profiler.py: profile accuracy and latency of detectors. 
+  - [ ] model_convert_torch.py: convert yolov3 and fasterrcnn to tensorrt formats.
+  - [ ] model_convert_tf.py: convert efficientdet-dx to tensorrt formats.
+  - [ ] model_configure.py: generate configure files for any tensorrt models.
+  - [ ] parse_result.py: xxx
 ## Documentations
 1. [Test Detectors (yolov3, faster-rcnn, efficientdet-dx) on Triton](https://github.com/efficient-edge/Turbo/tree/main/Triton)
 2. [Integrate with Video Analytics Pipelines](https://github.com/efficient-edge/Turbo/tree/main/VAP)
