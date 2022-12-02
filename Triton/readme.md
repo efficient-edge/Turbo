@@ -32,7 +32,7 @@ In Turbo, we use Pytorch pre-trained models for YOLOv3 and Faster RCNN. For Effi
    2. polygraphy inspect model /checkpoints/engine.trt --model-type engine
    ```
    
-<em>Note:</em>  Because we have downloaded a checkpoint of efficientdet-dx in the docker image, you do not need to download it again. In this example, we download efficient-d0. If you want to download other variants, you need to modify lines 36--38 of $Turbo/Docker/tensorflow_tensorrt/Dockerfile.
+<em>Note:</em>  Because we have downloaded a checkpoint of efficientdet-dx in the docker image, you do not need to download it again. In this example, we download efficient-d0. If you want to download other variants, you need to modify lines 36--38 of <em>$Turbo/Docker/tensorflow_tensorrt/Dockerfile</em>.
 ## model configuration
 ## triton server deployment
 ## triton client applications
