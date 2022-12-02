@@ -10,7 +10,7 @@ The paper introduces **Turbo** which selectively enhances incoming frames based 
 Source code and docs for Turbo
 
 ## Installation
-We provide some dockerfiles for NVIDIA GPU users to complete different tasks (training, testing, deployment and visualization). Thus, users do not need to install any libraries and only build the specific docker image for a component.
+We provide all [dockerfiles]() for NVIDIA GPU users to complete different tasks (training, testing, deployment and visualization). Thus, users only need to build the specific docker image for a component and then conduct all experiments in the docker container.
 ## Source code (file structure and TODO)
 - [ ] Trion: convert detectors to TensorRT models and deploy them on Triton.
   - [ ] model_convert.sh: convert pytorch/tensorflow detectors to tensorrt detectors.
