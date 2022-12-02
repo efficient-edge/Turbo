@@ -21,7 +21,7 @@ We provide all [dockerfiles](https://github.com/efficient-edge/Turbo/blob/main/D
 - [ ] VAP: use advanced video analytics pipelines as data preprocessing techniques.
   - [ ] vap.sh: leverage different video analytics pipelines (Glimpse, Vigil, NoScope) to preprocess an given video.
 - [ ] Scheduling: enable resource-aware scheduling algorithms on Triton with a specific video analytics pipeline.
-  - [ ] profiler.sh: profile detectors on pre-trained or customized data
+  - [ ] profiler.sh: profile detectors on pre-trained or customized data.
   - [ ] scheduler.sh: compute the idle resources and assign the specific detector to a frame.
 - [ ] GAN: train and evaluate the enhancer on pre-train data.
   - [ ] gan_train.sh: preprocessing pre-train data and training an enhancer on it.
@@ -46,7 +46,7 @@ We provide all [dockerfiles](https://github.com/efficient-edge/Turbo/blob/main/D
   - [ ] parse_result.py: xxx
 ## Documentations
 1. [Test Detectors (yolov3, faster-rcnn, efficientdet-dx) on Triton](https://github.com/efficient-edge/Turbo/tree/main/Triton)
-2. [Integrate with Video Analytics Pipelines](https://github.com/efficient-edge/Turbo/tree/main/VAP)
+2. [Integrate with Video Analytics Pipelines (Glimpse, Vigil, NoScope)](https://github.com/efficient-edge/Turbo/tree/main/VAP)
 3. [Enable Resource-Aware Scheduling](https://github.com/efficient-edge/Turbo/tree/main/Scheduling)
 4. [GAN (enhancer) Pre-Training](https://github.com/efficient-edge/Turbo/tree/main/GAN)
 5. [End2end Experiments](https://github.com/efficient-edge/Turbo/tree/main/E2E)
