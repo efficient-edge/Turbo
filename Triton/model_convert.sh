@@ -1,1 +1,1 @@
-# convert pytorch/tensorflow detectors to tensorrt detectors
+# convert pytorch detectors to tensorrt detectors
