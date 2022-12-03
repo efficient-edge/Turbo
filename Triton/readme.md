@@ -1,5 +1,5 @@
 # Test Detectors (YOLOv3, Faster RCNN, Efficientdet-dx) on NVIDIA Triton Server
-In Turbo, we use Pytorch pre-trained models for YOLOv3 and Faster RCNN. For Efficientdet-dx, we start from the pre-trained models of official TensorFlow implementation. Thus, we will show you two approaches to converting pre-trained models to TensorRT models.
+In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of TensorRT are supported by Triton. Thus, we first convert pre-trained detectors to TensorRT format. For YOLOv3 and Faster RCNN, we use Pytorch pre-trained models from [mmdetection](https://mmdetection.readthedocs.io/). For Efficient-dx, we use official TensorFlow pre-trained models from [automl](https://github.com/google/automl).
 ## Contents
 1. model conversion
    1. [Pytorch models (YOLOv3 and Faster RCNN)](#pytorch-models)
@@ -45,6 +45,8 @@ In Turbo, we use Pytorch pre-trained models for YOLOv3 and Faster RCNN. For Effi
    2. polygraphy inspect model /checkpoints/engine.trt --model-type engine
    ```
 ![](https://github.com/efficient-edge/Turbo/blob/main/media/model_config1.png)
+
+![](https://github.com/efficient-edge/Turbo/blob/main/media/config_sample.png)
 2. (Optional) Download model_repository.tar.gz (~487MB) and decompress them in <em>>$Turbo/Models</em>
    ```
    1. cd $Turbo/Models
