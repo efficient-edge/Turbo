@@ -37,7 +37,15 @@ In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of T
 <em>Note#2:</em> Details (input size) of efficient-dx can be found in [EfficientDet-TensorRT8.ipynb](https://github.com/NVIDIA/TensorRT/blob/96e23978cd6e4a8fe869696d3d8ec2b47120629b/demo/EfficientDet/notebooks/EfficientDet-TensorRT8.ipynb).
 
 ## model configuration
-1. Inspect TensorRT models and modify the config.pbtxt
+0. Pull a docker image for Triton server
+   ```
+   docker pull nvcr.io/nvidia/tritonserver:<22.08>-py3
+   ```
+1. Pull a docker image for Triton client
+   ```
+   docker pull nvcr.io/nvidia/tritonserver:<22.08>-py3-sdk
+   ```
+2. Inspect TensorRT models and modify the config.pbtxt
    ```
    # For efficientdet-d0
    # YOLOv3 and Faster RCNN can refer to previous steps
@@ -48,7 +56,7 @@ In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of T
 
 ![](https://github.com/efficient-edge/Turbo/blob/main/media/config_sample.png)
 
-2. (Optional) Download model_repository.tar.gz (~487MB) and decompress them in <em>$Turbo/Models</em>
+3. (Optional) Download model_repository.tar.gz (~487MB) and decompress them in <em>$Turbo/Models</em>
    ```
    1. cd $Turbo/Models
    2. download https://drive.google.com/file/d/1o3V_QcShEwEVMlwWmw5qTVUpa3dDatEk/view?usp=sharing
