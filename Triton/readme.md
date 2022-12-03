@@ -19,7 +19,7 @@ In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of T
    ```
    # Run the docker container in a interactive mode
    1. docker run -it --rm --net host -v $Turbo/Models/:/checkpoints efficientdet
-   # In the container
+   # Within the container
    2. pip uninstall pycuda
    3. pip install pycuda
    4. python3 ./tensorrt/samples/python/efficientdet/build_engine.py --onnx ./onnx_model/model.onnx --engine /checkpoints/engine.trt --precision fp32
@@ -28,11 +28,11 @@ In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of T
    ```
    # Run the docker container in a interactive mode
    1. docker run -it --rm -v $Turbo/Models/:/checkpoints efficientdet
-   # In the container, show basic info (input, output, name, #layers) for tensorrt model
+   # Within the container, print basic info (input, output, name, #layers) for tensorrt model
    2. polygraphy inspect model /checkpoints/engine.trt --model-type engine
    ```
 
-<em>Note#1:</em>  Because we have downloaded a checkpoint of efficientdet-dx in the docker image, you do not need to download it again. In this example, we download efficient-d0. If you want to download other variants, you need to modify lines 36--38 and 58--61 of <em>$Turbo/Docker/tensorflow_tensorrt/Dockerfile</em>.
+<em>Note#1:</em>  Because we have downloaded a checkpoint of efficientdet-dx within the docker image, you do not need to download it again. In this example, we download efficient-d0. If you want to download other variants, you need to modify lines 36--38 and 58--61 of <em>$Turbo/Docker/tensorflow_tensorrt/Dockerfile</em>.
 
 <em>Note#2:</em> Details (input size) of efficient-dx can be found in [EfficientDet-TensorRT8.ipynb](https://github.com/NVIDIA/TensorRT/blob/96e23978cd6e4a8fe869696d3d8ec2b47120629b/demo/EfficientDet/notebooks/EfficientDet-TensorRT8.ipynb).
 
