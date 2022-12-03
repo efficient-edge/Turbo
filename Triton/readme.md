@@ -24,7 +24,7 @@ In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of T
    3. pip install pycuda
    4. python3 ./tensorrt/samples/python/efficientdet/build_engine.py --onnx ./onnx_model/model.onnx --engine /checkpoints/engine.trt --precision fp32
    ```
-2. Check the TensorRT model with _polygraphy_
+2. Inspect the TensorRT model with _polygraphy_
    ```
    # Run the docker container in a interactive mode
    1. docker run -it --rm -v $Turbo/Models/:/checkpoints efficientdet
@@ -37,7 +37,7 @@ In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of T
 <em>Note#2:</em> Details (input size) of efficient-dx can be found in [EfficientDet-TensorRT8.ipynb](https://github.com/NVIDIA/TensorRT/blob/96e23978cd6e4a8fe869696d3d8ec2b47120629b/demo/EfficientDet/notebooks/EfficientDet-TensorRT8.ipynb).
 
 ## model configuration
-1. Check TensorRT models and modify the config.pbtxt
+1. Inspect TensorRT models and modify the config.pbtxt
    ```
    # For efficientdet-d0
    # YOLOv3 and Faster RCNN can refer to previous steps
