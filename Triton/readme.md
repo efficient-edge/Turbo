@@ -47,7 +47,8 @@ In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of T
 ![](https://github.com/efficient-edge/Turbo/blob/main/media/model_config1.png)
 
 ![](https://github.com/efficient-edge/Turbo/blob/main/media/config_sample.png)
-2. (Optional) Download model_repository.tar.gz (~487MB) and decompress them in <em>>$Turbo/Models</em>
+
+2. (Optional) Download model_repository.tar.gz (~487MB) and decompress them in <em>$Turbo/Models</em>
    ```
    1. cd $Turbo/Models
    2. download https://drive.google.com/file/d/1o3V_QcShEwEVMlwWmw5qTVUpa3dDatEk/view?usp=sharing
