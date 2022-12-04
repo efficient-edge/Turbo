@@ -70,4 +70,10 @@ In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of T
 ```
 ![](https://github.com/efficient-edge/Turbo/blob/main/media/triton_server_success.png)
 ## triton client applications
+```
+# image client application
+bash triton_client.sh image
+# video client application
+bash triton_client.sh video
+```
 ## visualization

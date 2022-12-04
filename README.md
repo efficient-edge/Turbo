@@ -12,12 +12,12 @@ Source code and docs for Turbo
 ## Installation
 We provide all [dockerfiles](https://github.com/efficient-edge/Turbo/blob/main/Docker/readme.md) for NVIDIA GPU users to complete different tasks (training, testing, deployment and visualization). Thus, users only need to build the specific docker image for a component and then conduct all experiments in the docker container.
 ## Source code (file structure and TODO)
-- [ ] Trion: convert detectors to TensorRT models and deploy them on Triton.
+- [x] Trion: convert detectors to TensorRT models and deploy them on Triton.
   - [x] model_convert.sh: convert pytorch/tensorflow detectors to tensorrt detectors.
   - [x] model_configure.sh: generate the model configs of tensorrt detectors for triton.
   - [x] triton_server.sh: start a triton server in docker mode with all deployed tensorrt detectors
-  - [ ] triton_client.sh: start a triton client application to send/receive a video (or images).
-  - [ ] visualization.ipynb: analysis and visualize results (bboxes, mAP and resource usage). 
+  - [x] triton_client.sh: start a triton client application to send/receive a video (or images).
+  - [x] visualization.ipynb: analysis and visualize results (bboxes, mAP and resource usage). 
 - [ ] VAP: use advanced video analytics pipelines as data preprocessing techniques.
   - [ ] vap.sh: leverage different video analytics pipelines (Glimpse, Vigil, NoScope) to preprocess an given video.
 - [ ] Scheduling: enable resource-aware scheduling algorithms on Triton with a specific video analytics pipeline.
