@@ -1,5 +1,5 @@
 # Test Detectors (YOLOv3, Faster RCNN, Efficientdet-dx) on NVIDIA Triton Server
-In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of TensorRT are supported by Triton. Thus, we first convert pre-trained detectors to TensorRT format. For YOLOv3 and Faster RCNN, we use Pytorch pre-trained models from [mmdetection](https://mmdetection.readthedocs.io/). For Efficient-dx, we use official TensorFlow pre-trained models from [automl](https://github.com/google/automl).
+In Turbo, we deploy TensorRT models on Nvidia Triton because most operators of TensorRT are supported by Triton. Thus, we first convert pre-trained detectors to TensorRT format. For YOLOv3 and Faster RCNN, we use Pytorch pre-trained models from [mmdetection](https://mmdetection.readthedocs.io/). For EfficientDet-Dx, we use official TensorFlow pre-trained models from [automl](https://github.com/google/automl).
 
 ![pipeline](https://github.com/efficient-edge/e2e-detection/blob/main/media/three_stage.png)
 ## Contents
